@@ -87,7 +87,7 @@ def style_conv(state: State, idx: int, row: int) -> str:
 page = """
 <|layout|columns=300px 1|
 <|part|render=True|class_name=sidebar|
-# Taipy **Jarvis**{: .color-primary} # {: .logo-text}
+# Farming  **Voice Assistant**{: .color-primary} # {: .logo-text}
 <|New Conversation|button|class_name=fullwidth plain|id=reset_app_button|on_action=erase_conv|>
 <br/>
 <|{status}|text|>
@@ -111,4 +111,4 @@ t = Thread(
 )
 t.start()
 
-gui.run(debug=True, dark_mode=True)
+gui.run(debug=True, dark_mode=True,title="Farming Assistant")
